@@ -34,8 +34,8 @@
                                     <action selector="sendButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jT-cw-oss"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJm-ja-nOI">
-                                <rect key="frame" x="20" y="444.5" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJm-ja-nOI">
+                                <rect key="frame" x="20" y="444.5" width="374" height="397.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,15 +44,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hJm-ja-nOI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6TG-on-hpA"/>
-                            <constraint firstItem="hJm-ja-nOI" firstAttribute="top" secondItem="lVJ-b0-NLj" secondAttribute="bottom" constant="20" id="FDK-MV-9SM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hJm-ja-nOI" secondAttribute="trailing" constant="20" id="8en-J2-g85"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hJm-ja-nOI" secondAttribute="bottom" constant="20" id="ZtC-OS-sHq"/>
+                            <constraint firstItem="hJm-ja-nOI" firstAttribute="top" secondItem="lVJ-b0-NLj" secondAttribute="bottom" constant="20" id="aGX-KY-nYs"/>
                             <constraint firstItem="lVJ-b0-NLj" firstAttribute="top" secondItem="LE5-QE-SmZ" secondAttribute="bottom" constant="30" id="aet-OL-CQm"/>
                             <constraint firstItem="LE5-QE-SmZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bNf-Gc-PUj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hJm-ja-nOI" secondAttribute="trailing" constant="20" id="oFM-8n-OpQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LE5-QE-SmZ" secondAttribute="trailing" constant="20" id="odg-UJ-B54"/>
                             <constraint firstItem="LE5-QE-SmZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pFN-v1-ngF"/>
                             <constraint firstItem="lVJ-b0-NLj" firstAttribute="centerX" secondItem="LE5-QE-SmZ" secondAttribute="centerX" id="pqF-w6-MZn"/>
-                            <constraint firstItem="hJm-ja-nOI" firstAttribute="height" secondItem="LE5-QE-SmZ" secondAttribute="height" multiplier="0.0730838" id="zl7-Pb-HgD"/>
+                            <constraint firstItem="hJm-ja-nOI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ud0-5B-d0c"/>
                         </constraints>
                     </view>
                     <connections>
