@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1B6366992829FDDD00172A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6366982829FDDD00172A1A /* AppDelegate.swift */; };
 		1B63669B2829FDDD00172A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B63669A2829FDDD00172A1A /* SceneDelegate.swift */; };
-		1B63669D2829FDDD00172A1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B63669C2829FDDD00172A1A /* ViewController.swift */; };
 		1B6366A02829FDDD00172A1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B63669E2829FDDD00172A1A /* Main.storyboard */; };
 		1B6366A22829FDDF00172A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6366A12829FDDF00172A1A /* Assets.xcassets */; };
 		1B6366A52829FDDF00172A1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6366A32829FDDF00172A1A /* LaunchScreen.storyboard */; };
+		1B6366AE2829FDF400172A1A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6366AD2829FDF400172A1A /* Alamofire */; };
+		1B6366B12829FE1500172A1A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6366B02829FE1500172A1A /* SwiftyJSON */; };
+		1B6366B3282A015000172A1A /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6366B2282A015000172A1A /* OCRViewController.swift */; };
+		1B6366B5282A01A300172A1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6366B4282A01A300172A1A /* Constants.swift */; };
+		1B6366B9282A046C00172A1A /* OCRAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6366B8282A046C00172A1A /* OCRAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B6366952829FDDD00172A1A /* MyKaKaoOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKaKaoOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6366982829FDDD00172A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B63669A2829FDDD00172A1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B63669C2829FDDD00172A1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B63669F2829FDDD00172A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B6366A12829FDDF00172A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B6366A42829FDDF00172A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B6366A62829FDDF00172A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6366B2282A015000172A1A /* OCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
+		1B6366B4282A01A300172A1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B6366B8282A046C00172A1A /* OCRAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6366B12829FE1500172A1A /* SwiftyJSON in Frameworks */,
+				1B6366AE2829FDF400172A1A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +66,10 @@
 			children = (
 				1B6366982829FDDD00172A1A /* AppDelegate.swift */,
 				1B63669A2829FDDD00172A1A /* SceneDelegate.swift */,
-				1B63669C2829FDDD00172A1A /* ViewController.swift */,
 				1B63669E2829FDDD00172A1A /* Main.storyboard */,
+				1B6366B8282A046C00172A1A /* OCRAPIManager.swift */,
+				1B6366B4282A01A300172A1A /* Constants.swift */,
+				1B6366B2282A015000172A1A /* OCRViewController.swift */,
 				1B6366A12829FDDF00172A1A /* Assets.xcassets */,
 				1B6366A32829FDDF00172A1A /* LaunchScreen.storyboard */,
 				1B6366A62829FDDF00172A1A /* Info.plist */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = MyKaKaoOCR;
+			packageProductDependencies = (
+				1B6366AD2829FDF400172A1A /* Alamofire */,
+				1B6366B02829FE1500172A1A /* SwiftyJSON */,
+			);
 			productName = MyKaKaoOCR;
 			productReference = 1B6366952829FDDD00172A1A /* MyKaKaoOCR.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 1B63668C2829FDDD00172A1A;
+			packageReferences = (
+				1B6366AC2829FDF400172A1A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1B6366AF2829FE1500172A1A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 1B6366962829FDDD00172A1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B63669D2829FDDD00172A1A /* ViewController.swift in Sources */,
+				1B6366B5282A01A300172A1A /* Constants.swift in Sources */,
+				1B6366B3282A015000172A1A /* OCRViewController.swift in Sources */,
 				1B6366992829FDDD00172A1A /* AppDelegate.swift in Sources */,
+				1B6366B9282A046C00172A1A /* OCRAPIManager.swift in Sources */,
 				1B63669B2829FDDD00172A1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B6366AC2829FDF400172A1A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1B6366AF2829FE1500172A1A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B6366AD2829FDF400172A1A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B6366AC2829FDF400172A1A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1B6366B02829FE1500172A1A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B6366AF2829FE1500172A1A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B63668D2829FDDD00172A1A /* Project object */;
 }
